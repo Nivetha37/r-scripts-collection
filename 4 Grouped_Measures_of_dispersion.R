@@ -1,0 +1,12 @@
+marks=c(5,10,15,20,25,30,35,40,45,50)
+freq=c(8,5,12,20,20,15,30,25,12,3)
+data=data.frame(marks,freq)
+data
+val=rep(data$marks,data$freq)
+val
+range(val)
+var(val)
+sd=sqrt(var(val))
+sd
+cv=sd/mean(val)*100
+cv
